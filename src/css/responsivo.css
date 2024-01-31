@@ -1,0 +1,81 @@
+@media(max-width: 1025px) {
+    .home .informacoes {
+        gap: 5%;
+        height: 80%;
+        font-size: 5mm;
+    }
+
+    .home .texto {
+        min-height: -12px;
+
+    }
+}
+
+@media(max-width: 690px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cabecalho .menu li a {
+        font-size: 5mm;
+    }
+
+    .home .imagem-fundo {
+        width: 68%;
+    }
+
+    .home .informacoes {
+        width: auto;
+        height: auto;
+        padding: 1%;
+        margin: 0%;
+    }
+
+    .home .informacoes .texto {
+        font-size: 6mm;
+        max-width: 80%;
+    }
+
+    .bnt-comprar {
+        font-size: 5mm;
+        padding: 3%;
+        margin: 2%;
+    }
+}
+
+@media(max-width: 415px) {
+   .cabecalho .menu{
+    padding: 6%;
+    justify-content: center;
+    gap: 20%;
+   }
+   .home .informacoes{
+    padding: 0%;
+    width: 50%;
+    margin: 0%;
+   }
+   .home .informacoes .lista-de-jogos{
+    margin-left: 20%;
+   }
+   .home .informacoes .titulo{
+    font-size: 7mm;
+   }
+   .home .informacoes .texto{
+    font-size: 5mm;
+   }
+   .compre-ja .cartao{
+    width: 76%;
+   }
+}
+
+@media(max-width: 690px){
+    .home .imagem-fundo{
+        width: 100%;
+    }
+
+}

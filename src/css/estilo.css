@@ -1,0 +1,238 @@
+body {
+    background-color: rgba(26, 32, 32, 0.925);
+    height: auto;
+    width: auto;
+}
+
+.cabecalho {
+    background-color: #000000dc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% ;
+    border-bottom: 1mm solid #164e00;
+}
+
+.cabecalho .logo {
+
+    display: flex;
+    gap: 2%;
+}
+
+.cabecalho .menu {
+    display: flex;
+    gap: 4cm;
+}
+
+.cabecalho .menu li a {
+    padding: 30%;
+    color: #e8e8e8;
+    font-size: 4mm;
+    font-weight: bolder;
+
+}
+
+.cabecalho .menu li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.home {
+    display: flex;
+    position: relative;
+    min-width: calc(100vh - 8%);
+}
+
+.home .imagem-fundo {
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .informacoes {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20mm;
+    margin: 5%;
+    padding: 10mm;
+    max-width: 200mm;
+    height: 70%;
+}
+
+.home .informacoes img {
+    width: 70%;
+}
+
+.home .informacoes .lista-de-jogos {
+    display: flex;
+    max-width: 25%;
+    gap: 30%;
+}
+
+.home .informacoes .titulo {
+    font-size: 10mm;
+    line-break: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.home .informacoes .texto {
+    font-size: 6mm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+
+.bnt-comprar {
+    background-color: rgba(68, 84, 99, 0.26);
+    border: 0.2vh solid #fff;
+    border-radius: 40vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 200%;
+    text-align: center;
+    padding: 3vh 5vh;
+    width: 50%;
+    text-transform: uppercase;
+    transition: all .3s ease-in;
+}
+
+.bnt-comprar:hover {
+    background-color: #ffffff;
+    color: #0b0b0b;
+}
+main::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(73, 196, 16, 0.534),
+    rgba(16, 105, 101, 0.7) 35%, transparent 65%);
+}
+
+.compre-ja .capa-do-jogo {
+    width: 80%;
+}
+
+.compre-ja {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5%;
+    align-items: center;
+}
+
+.compre-ja .titulo {
+    color: #fff;
+    padding-top: 2%;
+    font-size: 15mm;
+    font-weight: 200;
+}
+
+.compre-ja .cartao {
+    background-color: #e79417e1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    border-radius: 4vh;
+    padding: 4%;
+    gap: 6vh;
+
+}
+
+.compre-ja .informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-size: 6mm;
+}
+
+.compre-ja .informacoes h3 {
+    color: #e8e8e8;
+    font-weight: 700;
+}
+
+.compre-ja .informacoes p {
+    color: #e8e8e8;
+    line-height: 1.5;
+}
+
+.compre-ja .informacoes .plataformas{
+    background-color: #b45312;
+    padding: 2%;
+    border-radius: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vh;
+}
+.compre-ja .btn-plataforma .plataformas {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all .3s ease-in;
+    display: none;
+    opacity: 0;
+
+}
+.btn-plataforma {
+    background-color: rgba(68, 84, 99, 0.26);
+    flex-wrap: wrap;
+    border: 0.2vh solid #fff;
+    border-radius: 3vh;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 200%;
+    text-align: center;
+    padding: 3vh 5vh;
+    width: 110%;
+    text-transform: uppercase;
+    transition: all .3s ease-in;
+}
+.compre-ja .btn-plataforma .plataformas.ativo {
+    display: flex;
+    opacity: 1;
+}
+.compre-ja .btn-plataforma .btn-plataforma li {
+    padding: 20px;
+}
+.compre-ja .btn-plataforma .plataformas li:nth-child(1) {
+    border: 1px solid #00439c;
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(1):hover {
+    background-color: #00439c;
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(2) {
+    border: 1px solid #387a26;
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(2):hover {
+    background-color: #387a26;
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(3) {
+    border: 1px solid #00439c;
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(3):hover {
+    background-color: #00439c;
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(4) {
+    border: 1px solid #387a26;
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(4):hover {
+    background-color: #387a26;
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(5) {
+    border: 1px solid #fcaf17;
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(5):hover {
+    background-color: #fcaf17;
+}
+
